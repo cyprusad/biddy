@@ -1,0 +1,937 @@
+{
+  "generated_at": "2026-11-18T17:57-05:00",
+  "model": "typesafe/jev-1.14",
+  "decision_limit": 50,
+  "decision_count": 50,
+  "candidate_pair_count": 6272,
+  "decisions": [
+    {
+      "kind": "supplier",
+      "tender_id": "cb-787-21460756",
+      "supplier": "ALS, Environmental Laboratory",
+      "history_ids": [
+        "CW2401287",
+        "CW2417956"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0.04,
+        "Poor match": 0.96,
+        "Insufficient evidence": 0
+      },
+      "confidence": 0.95,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042389-pm5KSLLt3P4L2IfGzra1"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-787-21460756",
+      "supplier": "Imperial Cleaners Ltd",
+      "history_ids": [
+        "CW2402040",
+        "CW2453761",
+        "CW2453764"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042389-q7gsUCBe47l9nAj9yhhv"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-787-21460756",
+      "supplier": "ATCO",
+      "history_ids": [
+        "CW2388487",
+        "CW2412046"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 0.99,
+        "Insufficient evidence": 0.01
+      },
+      "confidence": 0.99,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042389-ScTmQUNHsFOwDfPb1x7e"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-787-21460756",
+      "supplier": "Civeo Canada Limited Partnership",
+      "history_ids": [
+        "CW2402285",
+        "CW2403219"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042390-1Vp82tEah8160pgSavNq"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-787-21460756",
+      "supplier": "Promaxis Systems Inc.",
+      "history_ids": [
+        "CW2410731"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042390-fs3UAZOR5KMPVOXFsp8p"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-969-74790955",
+      "supplier": "SYSCO MARITIMES / SYSCO EDMONTON / SYSCO QUEBEC",
+      "history_ids": [
+        "CW2410324",
+        "CW2460226",
+        "CW2428112"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042391-rTx7ROqIcN7dIo9EMtMq"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-969-74790955",
+      "supplier": "Gordon Food Service",
+      "history_ids": [
+        "CW2410327",
+        "CW2414951"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042391-93vymcihCvqcESOhqaL7"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-969-74790955",
+      "supplier": "World Fuel Services Canada, ULC",
+      "history_ids": [
+        "CW2373987",
+        "CW2454624",
+        "CW2437635"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042391-RS3lcINGV32w6bXdDpjP"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-969-74790955",
+      "supplier": "WELDCO BEALES MFG LTD",
+      "history_ids": [
+        "CW2408516"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042392-iowTvNmcQT2sqtxjiblo"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-969-74790955",
+      "supplier": "CAPITAL OFFICE INTERIORS LIMITED",
+      "history_ids": [
+        "CW2426460",
+        "CW2399604",
+        "CW2414267"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042392-knWwlaHQ9LgOgasoTa9I"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-944-67394540",
+      "supplier": "ATCO",
+      "history_ids": [
+        "CW2388487",
+        "CW2412046"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 0.99,
+        "Insufficient evidence": 0.01
+      },
+      "confidence": 0.99,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042393-Kcmle2iVDEbvgPS7GFne"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-944-67394540",
+      "supplier": "Civeo Canada Limited Partnership",
+      "history_ids": [
+        "CW2402285",
+        "CW2403219"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042393-PsW69kQoObEss4Zvinfk"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-944-67394540",
+      "supplier": "WSP Canada Group Limited",
+      "history_ids": [
+        "CW2460608",
+        "CW2471030",
+        "CW2416703"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0.01,
+        "Poor match": 0.98,
+        "Insufficient evidence": 0.01
+      },
+      "confidence": 0.97,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042393-MDbdrzjqK11IaRpTOB5P"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-944-67394540",
+      "supplier": "CALIAN LTD.",
+      "history_ids": [
+        "CW2438702",
+        "CW2388024",
+        "CW2452333"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0.09,
+        "Poor match": 0.9,
+        "Insufficient evidence": 0.01
+      },
+      "confidence": 0.87,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042394-L0PNE4xiT95bVzCXGZ4B"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-944-67394540",
+      "supplier": "Trademark Industries",
+      "history_ids": [
+        "CW2445050"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042394-x4gVWaSQiur0leqpfbd2"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-341-53758263",
+      "supplier": "Andas Advisory Group Ltd.",
+      "history_ids": [
+        "CW2429402",
+        "CW2473139",
+        "CW2454019"
+      ],
+      "choice": "Insufficient evidence",
+      "probabilities": {
+        "Strong match": 0.14,
+        "Possible match": 0.22,
+        "Poor match": 0.01,
+        "Insufficient evidence": 0.63
+      },
+      "confidence": 0.51,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042394-uBgmA1i0RR5Fa3scfx7D"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-341-53758263",
+      "supplier": "Syntagme inc.",
+      "history_ids": [
+        "CW2436127",
+        "EN966-140305/099/ZF"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 0.99,
+        "Insufficient evidence": 0.01
+      },
+      "confidence": 0.99,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042395-xHSXM9edjwOwShfLcJVB"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-341-53758263",
+      "supplier": "CNW Group Ltd.",
+      "history_ids": [
+        "CW2447273",
+        "CW2249235"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 0.99,
+        "Insufficient evidence": 0.01
+      },
+      "confidence": 0.99,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042395-q7x9NuRu6bwPFXy6Jss1"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-341-53758263",
+      "supplier": "NATIONS",
+      "history_ids": [
+        "CW2436026",
+        "CW2442555",
+        "CW2473739"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042395-m1YUjk5HUJrH3ToAUcPi"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-341-53758263",
+      "supplier": "Les Traductions Tessier",
+      "history_ids": [
+        "CW2448422",
+        "CW2448976",
+        "CW2464200"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042395-7ibV34OGQPjFIpWDcoGQ"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-250-34996591",
+      "supplier": "ADVANCED NAVIGATION",
+      "history_ids": [
+        "CW2426337"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042398-QpE7oKr125WuAHhRZvBC"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-250-34996591",
+      "supplier": "MDA Systems Ltd.",
+      "history_ids": [
+        "CW2395440",
+        "CW2370332"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042398-X9xQzVxM4xtP7AbOlNTN"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-250-34996591",
+      "supplier": "Sunny shutter INC.",
+      "history_ids": [
+        "CW2455252",
+        "CW2426960"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042398-8VDyeETRzrqxDCuYEyow"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-250-34996591",
+      "supplier": "Bruker AXS LLC",
+      "history_ids": [
+        "CW2429161"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0.04,
+        "Poor match": 0.95,
+        "Insufficient evidence": 0.01
+      },
+      "confidence": 0.93,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042399-LypwIbH2nOnsV1rDTqw3"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-250-34996591",
+      "supplier": "Volatus Drones Canada",
+      "history_ids": [
+        "CW2440965",
+        "CW2459625"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042399-zfsrtZH0rqasZAcDFJk5"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-108-16875409",
+      "supplier": "Dexter Construction Company Limited",
+      "history_ids": [
+        "CW2473762",
+        "CW2462474"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0.01,
+        "Possible match": 0.25,
+        "Poor match": 0.71,
+        "Insufficient evidence": 0.03
+      },
+      "confidence": 0.61,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042400-huTor8WzHaKWBuYVKUFO"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-108-16875409",
+      "supplier": "BLACK & MCDONALD LIMITED",
+      "history_ids": [
+        "CW2461569",
+        "CW2426291",
+        "CW2411335"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0.02,
+        "Possible match": 0.33,
+        "Poor match": 0.62,
+        "Insufficient evidence": 0.03
+      },
+      "confidence": 0.49,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042401-ualpRjv1CSJH0m7TD9vB"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-108-16875409",
+      "supplier": "ASDR CANADA INC.",
+      "history_ids": [
+        "CW2443650",
+        "CW2443294",
+        "CW2442919"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042401-9ySYFuwT1xeIEkyM2qHA"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-108-16875409",
+      "supplier": "Energy Network Services Inc.",
+      "history_ids": [
+        "CW2407101"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0.01,
+        "Possible match": 0.32,
+        "Poor match": 0.63,
+        "Insufficient evidence": 0.04
+      },
+      "confidence": 0.51,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042401-PnFhkJ8hb1KTg0dB9Cv8"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-108-16875409",
+      "supplier": "Maple Plumbing & Heating Ltd.",
+      "history_ids": [
+        "CW2427098"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0.04,
+        "Possible match": 0.43,
+        "Poor match": 0.49,
+        "Insufficient evidence": 0.04
+      },
+      "confidence": 0.32,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042401-fDhT2wrf79BOJy37bFMc"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-698-58710899",
+      "supplier": "WESTWOOD ENTERPRISES LIMITED",
+      "history_ids": [
+        "CW2464519"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 0.99,
+        "Insufficient evidence": 0.01
+      },
+      "confidence": 0.99,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042403-oK6Lxh2n8qt9lmrtey2N"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-698-58710899",
+      "supplier": "IIC Technologies Inc.",
+      "history_ids": [
+        "CW2463692",
+        "CW2407903",
+        "CW2408497"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042403-RqNKk0u3IWp5h1szR2tG"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-698-58710899",
+      "supplier": "Hangar 13 Inc.",
+      "history_ids": [
+        "CW2445119"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042403-AHl05ZObBPbw5sdDdKoq"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-698-58710899",
+      "supplier": "Data Centre Intelligence Inc.",
+      "history_ids": [
+        "CW2465728",
+        "CW2420343",
+        "CW2418575"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0.01,
+        "Poor match": 0.93,
+        "Insufficient evidence": 0.06
+      },
+      "confidence": 0.91,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042403-cDU54KLiWhaNcd6jlYe3"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-698-58710899",
+      "supplier": "Data Centre Intelligence",
+      "history_ids": [
+        "CW2453116",
+        "CW2412315",
+        "CW2409067"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 0.93,
+        "Insufficient evidence": 0.07
+      },
+      "confidence": 0.91,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042404-xRNKZVCOtgGB6jV1JcS9"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-356-90467136",
+      "supplier": "WSP Canada Group Limited",
+      "history_ids": [
+        "CW2460608",
+        "CW2471030",
+        "CW2416703"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042408-HBw46sN8RGrpx18nW81e"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-356-90467136",
+      "supplier": "WESTWOOD ENTERPRISES LIMITED",
+      "history_ids": [
+        "CW2464519"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042409-YiYSvr34LrPvE1Ka6Zjx"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-356-90467136",
+      "supplier": "Finishcoat Painting Ltd",
+      "history_ids": [
+        "CW2461714"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042409-bHLNRNiAefQ8MIW9HGqt"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-356-90467136",
+      "supplier": "IIC Technologies Inc.",
+      "history_ids": [
+        "CW2463692",
+        "CW2407903",
+        "CW2408497"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042409-3IYf7Xw42j1YyPJODyE9"
+    },
+    {
+      "kind": "supplier",
+      "tender_id": "cb-356-90467136",
+      "supplier": "Nails Enterprises (2007) Inc.",
+      "history_ids": [
+        "CW2440006"
+      ],
+      "choice": "Poor match",
+      "probabilities": {
+        "Strong match": 0,
+        "Possible match": 0,
+        "Poor match": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042409-EUDcG6na16foJtWojPFJ"
+    },
+    {
+      "kind": "retender",
+      "contract_id": "F7044-230537/001/MC",
+      "tender_id": "cb-969-74790955",
+      "choice": "Unrelated",
+      "probabilities": {
+        "Likely related procurement": 0,
+        "Possibly related": 0,
+        "Unrelated": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042409-LjZZLSkaMA6QfM8hQAB6"
+    },
+    {
+      "kind": "retender",
+      "contract_id": "F7044-230537/001/MC",
+      "tender_id": "cb-250-34996591",
+      "choice": "Unrelated",
+      "probabilities": {
+        "Likely related procurement": 0,
+        "Possibly related": 0,
+        "Unrelated": 1,
+        "Insufficient evidence": 0
+      },
+      "confidence": 1,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042410-eFPljtA0fGCRwcEK4U1J"
+    },
+    {
+      "kind": "retender",
+      "contract_id": "F7044-240113/001/ML",
+      "tender_id": "cb-969-74790955",
+      "choice": "Insufficient evidence",
+      "probabilities": {
+        "Likely related procurement": 0.13,
+        "Possibly related": 0.06,
+        "Unrelated": 0.03,
+        "Insufficient evidence": 0.78
+      },
+      "confidence": 0.71,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042410-4faEqTPpwBsYiAkxQINi"
+    },
+    {
+      "kind": "retender",
+      "contract_id": "F7044-240113/001/ML",
+      "tender_id": "WS5943624261-Doc5945286266",
+      "choice": "Insufficient evidence",
+      "probabilities": {
+        "Likely related procurement": 0.05,
+        "Possibly related": 0.03,
+        "Unrelated": 0.16,
+        "Insufficient evidence": 0.76
+      },
+      "confidence": 0.68,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042410-VjQW37T2sXApj2Cf7Hru"
+    },
+    {
+      "kind": "retender",
+      "contract_id": "F7044-240113/001/ML",
+      "tender_id": "cb-250-34996591",
+      "choice": "Insufficient evidence",
+      "probabilities": {
+        "Likely related procurement": 0,
+        "Possibly related": 0.01,
+        "Unrelated": 0.28,
+        "Insufficient evidence": 0.71
+      },
+      "confidence": 0.61,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042410-0OLcmJQ2Wob0KQ16khi3"
+    },
+    {
+      "kind": "retender",
+      "contract_id": "F7044-240110/001/ML",
+      "tender_id": "cb-969-74790955",
+      "choice": "Insufficient evidence",
+      "probabilities": {
+        "Likely related procurement": 0.06,
+        "Possibly related": 0.08,
+        "Unrelated": 0.18,
+        "Insufficient evidence": 0.68
+      },
+      "confidence": 0.57,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042410-Kg0aRMcIZNNjIphM6gxm"
+    },
+    {
+      "kind": "retender",
+      "contract_id": "F7044-240110/001/ML",
+      "tender_id": "WS5943624261-Doc5945286266",
+      "choice": "Unrelated",
+      "probabilities": {
+        "Likely related procurement": 0.01,
+        "Possibly related": 0.01,
+        "Unrelated": 0.73,
+        "Insufficient evidence": 0.25
+      },
+      "confidence": 0.64,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042411-7LeepEBe2fI7g22xdqLf"
+    },
+    {
+      "kind": "retender",
+      "contract_id": "F7044-240110/001/ML",
+      "tender_id": "cb-250-34996591",
+      "choice": "Unrelated",
+      "probabilities": {
+        "Likely related procurement": 0,
+        "Possibly related": 0.01,
+        "Unrelated": 0.73,
+        "Insufficient evidence": 0.26
+      },
+      "confidence": 0.64,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042411-uRn264hcFhQGFFrnioJH"
+    },
+    {
+      "kind": "retender",
+      "contract_id": "F7044-250069/001/ML",
+      "tender_id": "cb-969-74790955",
+      "choice": "Insufficient evidence",
+      "probabilities": {
+        "Likely related procurement": 0.13,
+        "Possibly related": 0.04,
+        "Unrelated": 0.01,
+        "Insufficient evidence": 0.82
+      },
+      "confidence": 0.76,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042411-BPKsR6y0LtpjD3xfg5DT"
+    },
+    {
+      "kind": "retender",
+      "contract_id": "F7044-250069/001/ML",
+      "tender_id": "WS5943624261-Doc5945286266",
+      "choice": "Insufficient evidence",
+      "probabilities": {
+        "Likely related procurement": 0.32,
+        "Possibly related": 0.05,
+        "Unrelated": 0.01,
+        "Insufficient evidence": 0.62
+      },
+      "confidence": 0.49,
+      "model": "typesafe/jev-1.14-20261014",
+      "id": "gen-dec-1795042411-M3ZCWB2rJh5Zy8uufg4m"
+    }
+  ],
+  "inputs": {
+    "openTenderNotice-ouvertAvisAppelOffres.csv": {
+      "bytes": 6409483,
+      "rows": 937
+    },
+    "2025-2026-contractHistory-contratsOctroyes.csv": {
+      "bytes": 15318448,
+      "rows": 5734
+    },
+    "2026-2027-contractHistory-contratsOctroyes.csv": {
+      "bytes": 6741384,
+      "rows": 2466
+    }
+  }
+}
