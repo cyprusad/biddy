@@ -1,1 +1,23 @@
-{"name":"canadian-procurement-matchmaker","version":"0.1.0","private":true,"type":"module","scripts":{"dev":"vite --host 0.0.0.0","build":"vite build","snapshot":"python3 scripts/prepare_snapshot.py"},"dependencies":{"@ag-grid-community/client-side-row-model":"^34.3.1","ag-grid-community":"^34.3.1","ag-grid-react":"^34.3.1","react":"^19.2.0","react-dom":"^19.2.0"},"devDependencies":{"@types/react":"^19.2.0","@types/react-dom":"^19.2.0","typescript":"^5.9.3","vite":"^7.2.2"}}
+{
+  "name": "canadian-procurement-matchmaker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "snapshot": "python3 scripts/prepare_snapshot.py"
+  },
+  "dependencies": {
+    "ag-grid-community": "^36.3.0",
+    "ag-grid-react": "^36.3.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.2"
+  }
+}
