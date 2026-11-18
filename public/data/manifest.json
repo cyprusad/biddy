@@ -1,0 +1,27 @@
+{
+  "files": {
+    "tenders.json": {
+      "source": "openTenderNotice-ouvertAvisAppelOffres.csv",
+      "bytes": 6409483,
+      "rows": 937,
+      "sha256": "8f6903341ac4e497b88b2a417e2fb6fdc0af7bbdbd7e604f4cec855d1791aa1a",
+      "retrieved_at": "2026-11-18T22:40:50.900529+00:00"
+    },
+    "contracts-2025.json": {
+      "source": "2025-2026-contractHistory-contratsOctroyes.csv",
+      "bytes": 15318448,
+      "rows": 5734,
+      "sha256": "95b90e594cc1f9257d2d087ac645c6675b362f279e89e08a12f5e7b30d4f07a5",
+      "retrieved_at": "2026-11-18T22:40:52.090782+00:00"
+    },
+    "contracts-2026.json": {
+      "source": "2026-2027-contractHistory-contratsOctroyes.csv",
+      "bytes": 6741384,
+      "rows": 2466,
+      "sha256": "a91b34beceef57d77dd2b2328df828224533a6304983bbcf357ff3475c200026",
+      "retrieved_at": "2026-11-18T22:40:53.027175+00:00"
+    }
+  },
+  "retrieved_at": "2026-11-18T22:40:50.900529+00:00",
+  "snapshot_id": "25d080960b240c56c429c6a49f26b6bed9f6559007b51247e7a0eef1f01c53b3"
+}
