@@ -11,7 +11,8 @@ const criteria = {
 };
 export async function assess(payload, env = process.env, headers = {}) {
   const code = env.DEMO_RUN_TOKEN;
-  if (code && headers['x-demo-token'] !== code) return { status: 401, body: { error: 'Demo code required.' } };
+  if (!code) return { status: 503, body: { error: 'Jev is disabled until DEMO_RUN_TOKEN is configured.' } };
+  if (headers['x-demo-token'] !== code) return { status: 401, body: { error: 'Demo code required.' } };
   const key = env.OPENROUTER_API_KEY;
   if (!key) return { status: 503, body: { error: 'Jev is not configured on this server.' } };
   const pairs = payload?.pairs;
@@ -38,11 +39,11 @@ export async function assess(payload, env = process.env, headers = {}) {
       if (!answer || answer.type !== 'choice' || !Object.hasOwn(spec.options, answer.choice)) throw new Error(`Invalid response for candidate ${pair.id}`);
       return { id: pair.id, choice: answer.choice, probabilities: answer.probabilities || null, confidence: answer.confidence ?? null };
     });
-    return { status: 200, body: { model: data.model || MODEL, requestId: data.id || null, answers } };
+    return { status: 200, body: { model: data.model || MODEL, requestId: data.id || null, usage: data.usage || null, answers } };
   } catch (error) { return { status: 502, body: { error: error.message || 'Jev request failed.' } }; }
 }
 export default async function handler(req, res) {
-  if (req.method === 'GET') return res.status(200).json({ requiresDemoCode: Boolean(process.env.DEMO_RUN_TOKEN) });
+  if (req.method === 'GET') return res.status(200).json({ requiresDemoCode: Boolean(process.env.DEMO_RUN_TOKEN), enabled: Boolean(process.env.DEMO_RUN_TOKEN && process.env.OPENROUTER_API_KEY) });
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST required.' });
   const result = await assess(req.body, process.env, req.headers);
   return res.status(result.status).json(result.body);
