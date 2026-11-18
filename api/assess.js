@@ -42,6 +42,7 @@ export async function assess(payload, env = process.env, headers = {}) {
   } catch (error) { return { status: 502, body: { error: error.message || 'Jev request failed.' } }; }
 }
 export default async function handler(req, res) {
+  if (req.method === 'GET') return res.status(200).json({ requiresDemoCode: Boolean(process.env.DEMO_RUN_TOKEN) });
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST required.' });
   const result = await assess(req.body, process.env, req.headers);
   return res.status(result.status).json(result.body);
