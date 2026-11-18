@@ -22,7 +22,7 @@ Review the snapshot manifest and commit updated `public/data` artifacts before d
 
 ## Jev
 
-Copy `.env.example` to `.env.local`, set `OPENROUTER_API_KEY`, and optionally set `DEMO_RUN_TOKEN`. The key is read only by `api/assess.py`; never prefix it with `VITE_`. If a demo code is configured, send it as `x-demo-token` from the assessment UI. Assessment happens only after a user clicks the Jev button and is limited to 50 candidates per run.
+Copy `.env.example` to `.env.local`, set `OPENROUTER_API_KEY`, and optionally set `DEMO_RUN_TOKEN`. The key is read only by `api/assess.py`; never prefix it with `VITE_`. If a demo code is configured, send it as `x-demo-token` from the assessment UI. Assessment happens only after a user clicks the Jev button. The UI sends up to 50 selected or top-ranked candidates in one OpenRouter Decisions request; Jev returns one typed choice and probability set per candidate. That can bill for multiple judgments even though it is one HTTP request.
 
 ## Deploy
 
