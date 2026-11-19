@@ -1,4 +1,8 @@
+import { randomUUID } from 'node:crypto';
+
 const MODEL = 'typesafe/jev-1.14';
+// Log responses only: never request headers, credentials, or evidence bodies.
+const log = (level, event, fields) => console[level]('[jev-assess]', JSON.stringify({ event, ...fields }));
 const criteria = {
   supplier: {
     question: (id) => `For candidate ${id}, how closely does this supplier's demonstrated prior work match the new tender's requirements? Use only the candidate's records in state.`,
@@ -10,19 +14,36 @@ const criteria = {
   }
 };
 export async function assess(payload, env = process.env, headers = {}) {
-  const code = env.DEMO_RUN_TOKEN;
-  if (!code) return { status: 503, body: { error: 'Jev is disabled until DEMO_RUN_TOKEN is configured.' } };
-  if (headers['x-demo-token'] !== code) return { status: 401, body: { error: 'Demo code required.' } };
-  const key = env.OPENROUTER_API_KEY;
-  if (!key) return { status: 503, body: { error: 'Jev is not configured on this server.' } };
+  const traceId = randomUUID();
+  const started = Date.now();
   const pairs = payload?.pairs;
-  if (!Array.isArray(pairs) || pairs.length < 1 || pairs.length > 50) return { status: 400, body: { error: 'Send between 1 and 50 candidate pairs.' } };
-  if (new Set(pairs.map(p => p.id)).size !== pairs.length) return { status: 400, body: { error: 'Candidate IDs must be unique.' } };
+  const finish = (status, body, reason) => {
+    if (typeof body.error === 'string') {
+      for (const secret of [env.OPENROUTER_API_KEY, env.DEMO_RUN_TOKEN]) {
+        if (secret) body.error = body.error.split(secret).join('[redacted]');
+      }
+    }
+    log(status >= 500 ? 'error' : status >= 400 ? 'warn' : 'info', 'request_finished', {
+      traceId, status, reason, durationMs: Date.now() - started, response: body
+    });
+    return { status, body: { ...body, traceId } };
+  };
+  const code = env.DEMO_RUN_TOKEN;
+  if (!code) return finish(503, { error: 'Jev is disabled until DEMO_RUN_TOKEN is configured.' }, 'demo_code_not_configured');
+  if (headers['x-demo-token'] !== code) return finish(401, { error: 'Demo code required.' }, 'demo_code_rejected');
+  const key = env.OPENROUTER_API_KEY;
+  if (!key) return finish(503, { error: 'Jev is not configured on this server.' }, 'key_not_configured');
+  if (!Array.isArray(pairs) || pairs.length < 1 || pairs.length > 50) return finish(400, { error: 'Send between 1 and 50 candidate pairs.' }, 'invalid_pair_count');
+  if (pairs.some(p => !p || typeof p.id !== 'string' || !p.id)) return finish(400, { error: 'Each candidate needs an ID.' }, 'invalid_pair_id');
+  if (new Set(pairs.map(p => p.id)).size !== pairs.length) return finish(400, { error: 'Candidate IDs must be unique.' }, 'duplicate_pair_ids');
   const questions = {};
   const statePairs = [];
   for (let i = 0; i < pairs.length; i++) {
-    const pair = pairs[i], spec = criteria[pair.kind];
-    if (!spec || !pair.state || JSON.stringify(pair.state).length > 12000) return { status: 400, body: { error: 'Invalid candidate pair.' } };
+    const pair = pairs[i], spec = Object.hasOwn(criteria, pair.kind) ? criteria[pair.kind] : null;
+    const stateCharacters = pair.state ? JSON.stringify(pair.state).length : 0;
+    if (!spec || !stateCharacters || stateCharacters > 12000) {
+      return finish(400, { error: 'Invalid candidate pair.' }, 'invalid_pair');
+    }
     const qid = `pair_${i}`;
     statePairs.push({ id: qid, evidence: pair.state });
     questions[qid] = { type: 'choice', instructions: spec.question(qid), criteria: spec.options };
@@ -33,18 +54,28 @@ export async function assess(payload, env = process.env, headers = {}) {
       body: JSON.stringify({ model: MODEL, state: { candidates: statePairs }, questions }), signal: AbortSignal.timeout(55000)
     });
     const data = await response.json();
-    if (!response.ok) return { status: response.status, body: { error: data?.error?.message || 'OpenRouter rejected the request.' } };
+    if (!response.ok) return finish(response.status, { error: data?.error?.message || 'OpenRouter rejected the request.' }, 'openrouter_rejected');
     const answers = pairs.map((pair, i) => {
       const answer = data.answers?.[`pair_${i}`], spec = criteria[pair.kind];
-      if (!answer || answer.type !== 'choice' || !Object.hasOwn(spec.options, answer.choice)) throw new Error(`Invalid response for candidate ${pair.id}`);
+      if (!answer || answer.type !== 'choice' || !Object.hasOwn(spec.options, answer.choice)) {
+        throw new Error(`Invalid response for candidate ${pair.id}`);
+      }
       return { id: pair.id, choice: answer.choice, probabilities: answer.probabilities || null, confidence: answer.confidence ?? null };
     });
-    return { status: 200, body: { model: data.model || MODEL, requestId: data.id || null, usage: data.usage || null, answers } };
-  } catch (error) { return { status: 502, body: { error: error.message || 'Jev request failed.' } }; }
+    return finish(200, { model: data.model || MODEL, requestId: data.id || null, usage: data.usage || null, answers }, 'success');
+  } catch (error) {
+    return finish(502, { error: error.message || 'Jev request failed.' }, 'upstream_failure');
+  }
 }
 export default async function handler(req, res) {
-  if (req.method === 'GET') return res.status(200).json({ requiresDemoCode: Boolean(process.env.DEMO_RUN_TOKEN), enabled: Boolean(process.env.DEMO_RUN_TOKEN && process.env.OPENROUTER_API_KEY) });
+  res.setHeader('Cache-Control', 'no-store');
+  if (req.method === 'GET') {
+    const health = { requiresDemoCode: Boolean(process.env.DEMO_RUN_TOKEN), enabled: Boolean(process.env.DEMO_RUN_TOKEN && process.env.OPENROUTER_API_KEY) };
+    log('info', 'availability_checked', health);
+    return res.status(200).json(health);
+  }
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST required.' });
   const result = await assess(req.body, process.env, req.headers);
+  res.setHeader('X-Assessment-Trace', result.body.traceId);
   return res.status(result.status).json(result.body);
 }
