@@ -1,6 +1,6 @@
 # Canadian Procurement Matchmaker
 
-A small Vercel demo for inspecting CanadaBuys records, finding deterministic supplier/retendering candidates, and optionally assessing selected pairs with Jev.
+A small Vercel demo for inspecting CanadaBuys records, finding deterministic supplier candidates, and optionally assessing selected pairs with Jev.
 
 ## Local setup
 
